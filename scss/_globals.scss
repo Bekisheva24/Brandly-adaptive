@@ -13,9 +13,15 @@ html {
 }
 
 body {
-	min-width: 320px; 
   font-family: $main-font;
   font-size: 18px;
   line-height: 21px;
   overflow-x: hidden;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
