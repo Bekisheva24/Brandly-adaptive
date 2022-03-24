@@ -29,6 +29,10 @@
       box-shadow: 0 8px 0 0 $accent, 0 16px 0 0 $accent;
     }
   }
+  .menu-show {
+    display: flex;
+    z-index: 2;
+  }
 }
 
 @media (min-width: 1024px) {
