@@ -1,33 +1,35 @@
 @import "vars";
 
 .section-title {
-  padding: 28px 0 32px;
+  position: relative;
+  margin: 0 0 60px 0;
+  padding: 28px 0 29px;
   font-family: $secondary-font;
   font-style: italic;
   font-weight: 300;
   font-size: 40px;
   line-height: 40px;
-  text-align: center;
   text-transform: capitalize;
   color: $dark;
 
-//   span:after {
-//     content: "";
-//     border-bottom: 1px solid $accent;
-//     width: 115px;
-//     position: absolute;
-//     top: 100px;
-//     bottom: 0;
-//     left: 456px;
-//   }
-//   span:before {
-//     content: "";
-//     border-bottom: 1px solid $accent;
-//     width: 115px;
-//     // height: 73px;
-//     position: absolute;
-//     top: 0;
-//     bottom: 100px;
-//     left: 456px;
-//   }
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 115px;
+    height: 3px;
+    background-color: $accent;
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 115px;
+    height: 3px;
+    background-color: $accent;
+  }
 }
