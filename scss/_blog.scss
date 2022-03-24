@@ -1,14 +1,9 @@
 @import "vars";
 
 .blog {
-  margin-top: 60px;
-
-  &__title {
-    position: relative;
-  }
+  text-align: center;
 
   &__list {
-    margin-top: 70px;
     list-style: none;
     text-align: center;
   }
