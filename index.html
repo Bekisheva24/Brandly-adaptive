@@ -24,9 +24,9 @@
             </a>
 
             <nav class="header__nav">
-              <ul class="menu">
+              <ul class="menu menu-show">
                 <li class="menu__item">
-                  <a class="menu__link" href="#">home</a>
+                  <a class="menu__link active" href="#">home</a>
                 </li>
                 <li class="menu__item">
                   <a class="menu__link" href="#">shop</a>
@@ -67,13 +67,15 @@
           <div class="container">
             <h2 class="section-title categories__title">categories</h2>
             <ul class="categories__list">
-              <li class="categories__item1">
+              <li class="categories__item categories__item--man overlay">
                 <a class="categories__link" href="#">Man</a>
               </li>
-              <li class="categories__item2">
+              <li class="categories__item categories__item--woman overlay">
                 <a class="categories__link" href="#">Women</a>
               </li>
-              <li class="categories__item3">
+              <li
+                class="categories__item categories__item--accessories overlay"
+              >
                 <a class="categories__link" href="#">Accessories</a>
               </li>
             </ul>
@@ -82,9 +84,7 @@
 
         <section class="blog">
           <div class="container">
-            <h2 class="section-title blog__title">
-              <span></span>from the blog
-            </h2>
+            <h2 class="section-title blog__title">from the blog</h2>
 
             <ul class="blog__list">
               <li class="blog__item">
@@ -121,7 +121,7 @@
         </section>
       </main>
 
-      <footer class="footer">
+      <footer class="footer overlay">
         <div class="container">
           <p>Copyright Brandly. 2020</p>
         </div>
