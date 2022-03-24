@@ -3,11 +3,11 @@
 .menu {
   width: 100%;
   position: absolute;
-  display: none;
-  padding: 10px 0;
-  flex-direction: column;
   top: 66px;
   right: 0;
+  display: none;
+  flex-direction: column;
+  padding: 10px 0;
   text-align: center;
   list-style: none;
   background-color: $light-grey;
@@ -22,6 +22,14 @@
     color: $accent;
     text-decoration: none;
     text-transform: capitalize;
+    transition: all 0.3s;
+  }
+  &__link:hover {
+    color: lighten($accent, 30%);
+  }
+
+  .active {
+    color: lighten($accent, 30%);
   }
 }
 
